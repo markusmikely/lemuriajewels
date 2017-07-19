@@ -1,0 +1,51 @@
+/*  Fonts */
+* {
+  font-family: 'Open sans', sans-serif, arial;
+}
+h1, h2, h3, h4 {
+  font-family: 'Old Standard TT', serif;
+  margin-bottom:20px;
+}
+h1 {
+  font-size:40px;
+}
+h2 {
+  font-size:36px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size:22px;
+}
+p {
+  font-size: 15px;
+  line-height: 1.7;
+  font-family: 'Open sans', sans-serif, arial;
+}
+p.large{
+  font-size: 16px;
+}
+p.small {
+  font-size:12px;
+}
+/* Links */
+a {
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+}
+a:hover, a:focus {
+
+}
+.page.open {
+    top: 815px;
+    transition: all linear .2s;
+}
+.page {
+    position: relative;
+    z-index: 1;
+    transition: all linear .2s;
+    top: 0;
+    background:white;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400,400italic,700');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300italic,300,600,400italic,900italic,900,700italic,600italic,700');
+
+/* Main Styles */
+@import url('main.css');
+/* Buttons Styles */
+@import url('buttons.css');
+/* Menu Styles */
+@import url('menu.css');
+/* Header Styles */
+@import url('header.css');
+/* Footer Styles */
+@import url('footer.css');
+/* Contact Styles */
+@import url('contact.css');
+/* Boxes Styles */
+@import url('boxes.css');
+/* Gallery Styles */
+@import url('gallery.css');
+/* Sections Styles */
+@import url('sections.css');
+/* Services Styles */
+@import url('services.css');

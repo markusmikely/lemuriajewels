@@ -1,0 +1,103 @@
+<div ng-controller="ContactController as vm">
+	<section id="hero" class="contact">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+	        <div class="box">
+	          <h2>Contact Us</h2>
+	          <p>We welcome all enquiries, from private individuals to corporate parties.
+	            Please send us your query and we will aim too respond within 24 hours.</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+	<section class="section">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
+	          <h3>How can we help?</h3>
+	          <p>At Lemuria Jewels, our team of gemologists and artists work with you
+	            to create perfect and personalised pieces of jewellery that are precious
+	            in every sense of the word. And since our expert team helps bring to life
+	            your vision using only the most enduringly beautiful, natural gemstones,
+	            every piece of Lemuria Jewellery is as original and timeless as its owner...</p>
+	        </div>
+	    </div>
+	  </div>
+	</section>
+	<section id="form">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+					<p>{{vm.message}}</p>
+					<form name="form" novalidate ng-submit="vm.sendContact()" role="form">
+		 				<div class="col-lg-6 col-md-6 col-sm-6">
+	           	<div class="form-group">
+	                <label for="firstname">First Name</label>
+	                <input type="text" name="firstname" id="firstname" class="form-control" ng-model="vm.contact.firstname" required />
+									<div ng-messages="form.firstname.$dirty && form.firstname.$error" class="error messages">
+										<div ng-message="required">Required</div>
+									</div>
+	              </div>
+	            </div>
+	            <div class="col-lg-6 col-md-6 col-sm-6">
+	              <div class="form-group">
+	                <label for="lastname">Last Name</label>
+	                <input type="text" name="lastname" id="lastname" class="form-control" ng-model="vm.contact.lastname" required/>
+									<div ng-messages="form.lastname.$dirty && form.lastname.$error" class="error messages">
+										<div ng-message="required">Required</div>
+									</div>
+	              </div>
+	            </div>
+	            <div class="col-lg-6 col-md-6 col-sm-6">
+	              <div class="form-group">
+	                <label for="email">Email</label>
+	                <input type="email" name="email" ng-pattern="/\S+@\S+\.\S+/" id="email" class="form-control" ng-model="vm.contact.email" />
+									<div ng-messages="form.email.$dirty && form.email.$error" class="error messages">
+										<div ng-message="required">Required</div>
+										<div ng-message="pattern">Wrong format</div>
+									</div>
+								</div>
+	            </div>
+	            <div class="col-lg-6 col-md-6 col-sm-6">
+	              <div class="form-group">
+	                <label for="phone">Phone Number</label>
+	                <input type="text" name="phone" id="phone" class="form-control"  ng-model="vm.contact.phone"required  />
+									<div ng-messages="form.phone.$dirty && form.phone.$error" class="error messages">
+										<div ng-message="required">Required</div>
+									</div>
+	              </div>
+	            </div>
+	            <div class="col-lg-6 col-md-6 col-sm-6">
+	              <div class="form-group">
+	                <label>What are you looking for?"</label>
+	                <input type="text" name="looking" id="looking" class="form-control" ng-model="vm.contact.looking" required/>
+									<div ng-messages="form.looking.$dirty && form.looking.$error" class="error messages" >
+										<div ng-message="required">Required</div>
+									</div>
+								</div>
+	            </div>
+	            <div class="col-lg-6 col-md-6 col-sm-6">
+	              <div class="form-group">
+	                <label>What is your budget?</label>
+	                <input type="text" id="budget" name="budget" class="form-control" ng-model="vm.contact.budget" required/>
+									<div ng-messages="form.budget.$dirty && form.budget.$error" class="error messages" >
+										<div ng-message="required">Required</div>
+									</div>
+	              </div>
+	            </div>
+	            <div class="col-lg-12 text-center">
+	              <div class="form-group">
+	                <label>Any additional comments</label>
+	                <textarea id="comments" name="comments" class="form-control" ng-model="vm.contact.comments" class="form-control"> </textarea>
+								</div>
+								<button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-blue-filled">Submit<img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" /></button>
+	            </div>
+	          </form>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+</div>

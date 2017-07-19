@@ -1,0 +1,202 @@
+{
+    "birthstones" : [
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones1.jpg",
+        "loader":"assets/images/gallery/birthstones1-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones2.jpg",
+        "loader":"assets/images/gallery/birthstones2-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones3.jpg",
+        "loader":"assets/images/gallery/birthstones3-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones4.jpg",
+        "loader":"assets/images/gallery/birthstones4-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones5.jpg",
+        "loader":"assets/images/gallery/birthstones5-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones6.jpg",
+        "loader":"assets/images/gallery/birthstones6-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones7.jpg",
+        "loader":"assets/images/gallery/birthstones7-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Birthstones",
+        "image":"assets/images/gallery/birthstones8.jpg",
+        "loader":"assets/images/gallery/birthstones8-base64.jpg"
+      }
+    ],
+    "elements" : [
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements1.jpg",
+        "loader":"assets/images/gallery/elements1-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements2.jpg",
+        "loader":"assets/images/gallery/elements2-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements3.jpg",
+        "loader":"assets/images/gallery/elements3-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements4.jpg",
+        "loader":"assets/images/gallery/elements4-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements5.jpg",
+        "loader":"assets/images/gallery/elements5-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements6.jpg",
+        "loader":"assets/images/gallery/elements6-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements7.jpg",
+        "loader":"assets/images/gallery/elements7-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Elements",
+        "image":"assets/images/gallery/elements8.jpg",
+        "loader":"assets/images/gallery/elements8-base64.jpg"
+      }
+    ],
+    "enigma" : [
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma1.jpg",
+        "loader":"assets/images/gallery/enigma1-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma2.jpg",
+        "loader":"assets/images/gallery/enigma2-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma3.jpg",
+        "loader":"assets/images/gallery/enigma3-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma4.jpg",
+        "loader":"assets/images/gallery/enigma4-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma5.jpg",
+        "loader":"assets/images/gallery/enigma5-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma6.jpg",
+        "loader":"assets/images/gallery/enigma6-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma7.jpg",
+        "loader":"assets/images/gallery/enigma7-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Enigma",
+        "image":"assets/images/gallery/enigma8.jpg",
+        "loader":"assets/images/gallery/enigma8-base64.jpg"
+      }
+    ],
+    "lemuria" : [
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria1.jpg",
+        "loader":"assets/images/gallery/lemuria1-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria2.jpg",
+        "loader":"assets/images/gallery/lemuria2-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria3.jpg",
+        "loader":"assets/images/gallery/lemuria3-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria4.jpg",
+        "loader":"assets/images/gallery/lemuria4-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria5.jpg",
+        "loader":"assets/images/gallery/lemuria5-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria6.jpg",
+        "loader":"assets/images/gallery/lemuria6-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria7.jpg",
+        "loader":"assets/images/gallery/lemuria7-base64.jpg"
+      },
+      {
+        "title" :"",
+        "collection": "Lemuria",
+        "image":"assets/images/gallery/lemuria8.jpg",
+        "loader":"assets/images/gallery/lemuria8-base64.jpg"
+      }
+    ]
+}

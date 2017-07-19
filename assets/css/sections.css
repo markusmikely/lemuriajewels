@@ -1,0 +1,74 @@
+/* Hero */
+section#hero {
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding-top: 137px;
+}
+section#hero.home {
+  background: url(../images/home-hero.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+section#services {
+  background: url(../images/home_service_bg.jpg);
+  background-size: cover;
+  background-position: 0;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.white-bg p {
+  color:#4e4e4e;
+}
+section#about {
+  margin: 50px;
+  background: url(../images/home_about_bg.jpg);
+  background-size: cover;
+  height: 600px;
+  background-position: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+section#hero.contact {
+    background: url(../images/contact_hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section#hero.about {
+    background: url(../images/about_hero_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section.section {
+    padding: 40px 0;
+}
+section#ourstory {
+    background: url(../images/about_bg_1.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 50px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section#hero.services {
+    background: url(../images/services_hero_bg.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position: 0;
+}
+section#hero.gallery {
+    background: url(../images/gallery_hero_bg.jpg);
+    background-size: cover;
+}

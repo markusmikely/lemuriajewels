@@ -1,0 +1,27 @@
+section#services-lists {
+    padding: 40px 0;
+}
+
+section#services-lists .card {
+  background: #f1f1ef;
+  padding: 30px 40px;
+  text-align: CENTER;
+  width: 100%;
+  margin-bottom: 40px;
+  max-width: 100%;
+  min-height: 190px;
+}
+
+section#services-lists img {
+    margin-bottom: 0 !important;
+    width: 100%;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+section#services-lists .card h3 {
+    margin-bottom: 20px;
+    font-size: 26px !important;
+}

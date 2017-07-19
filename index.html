@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lemuria Jewels</title>
+	<!-- Base Url -->
+	<script>
+		document.write('<base href="' + document.location + '" />');
+	</script>
+	<!-- Meta Data -->
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+	<meta content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development." name="description">
+	<meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
+	<link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<!-- jQuery and Libraries -->
+	<script
+	  src="https://code.jquery.com/jquery-1.12.4.min.js"
+	  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+	  crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+	 <!--  Angular and Libraries -->
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.9/angular.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+	 <script type="text/javascript" src="https://code.angularjs.org/1.5.9/angular-cookies.min.js"></script>
+	 <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+	 <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+
+	 <!--  -->
+	 <script src="app/components/contact/contact.controller.js"></script>
+	 <script src="app/components/gallery/gallery.controller.js"></script>
+
+	 <script src="app/config.js"></script>
+ 	 <script src="app/run.js"></script>
+ 	 <script src="app/app.js"></script>
+
+</head>
+<body ng-app="lemuriaApp" ng-init="showMenu = false" ng-clock>
+	<section id="menu">
+		<button class="btn btn-hamburger" ng-click="showMenu = false">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<div class="container">
+			<div class="row">
+				<div class="logo">
+					<img src="assets/images/logo-black.svg" />
+				</div>
+				<ul class="list-unstyled">
+					<li><a ui-sref="home" ng-click="showMenu = false">Homepage</a></li>
+					<li><a ui-sref="about" ng-click="showMenu = false">About Us</a></li>
+					<li><a ui-sref="services" ng-click="showMenu = false">Services</a></li>
+					<li><a ui-sref="gallery" ng-click="showMenu = false">Gallery</a></li>
+					<li><a ui-sref="contact" ng-click="showMenu = false">Contact Us</a></li>
+					<li>
+						<ul class="list-inline">
+							<li id="facebook">
+								<a href="https://www.facebook.com/lemuriajewels/" target="_blank"></a>
+							</li>
+							<li id="twitter">
+								<a href="https://twitter.com/lemuriajewels/" target="_blank"></a>
+							</li>
+							<li id="instagram">
+								<a href="https://www.instagram.com/lemuriajewels/" target="_blank"></a>
+							</li>
+							<li id="linkedin">
+								<a href="https://www.linkedin.com/in/tatiana-ovchinnikova-1781b94b/" target="_blank"></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<div class="page" ng-class="{'open':showMenu}">
+		<header id="header">
+			<a href="#">
+			<h1>
+				<div class="logo">
+					<img src="assets/images/logo.svg" />
+				</div>
+			</h1>
+		</a>
+		<button class="btn btn-hamburger" ng-click="showMenu = true">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+	</header>
+	<!-- Content -->
+	<div id="content">
+		<div id="ui-view" ui-view></div>
+	</div>
+	<!-- /Content -->
+	<!-- TO DO Angularjs view -->
+	<section id="contact">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-lg-12">
+	        <div class="box">
+	          <h3>Enquire Today</h3>
+	          <p>We welcome all enquires, from private individuals<br>
+	            to corporate parties. Please send us your query<br>
+	            and we will aim to respon within 24 hours.</p>
+	          <a ui-sref="contact" class="btn btn-white">Contact Us</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</section>
+</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<img src="assets/images/lemuria-icon.svg" height="120" width="180" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h4>Lemuria Jewels</h4>
+					<ul class="list-unstyled">
+						<li><a href="#">Our Story</a></li>
+						<li><a href="#">Craftmanship</a></li>
+						<li><a href="#">Our Jewels</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h4>Helpful information</h4>
+					<ul class="list-unstyled">
+						<li><a ui-sref="terms">T&amp;C's</a></li>
+						<li><a ui-sref="privacy">Privacy Policy</a></li>
+						<li><a ui-sref="faqs">FAQs</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h4>Contact Us</h4>
+					<ul class="list-unstyled">
+						<li>Address line 1</li>
+						<li>Address line 2</li>
+						<li>Address line 3</li>
+						<li>Tel: <a href="tel:+442081234567">+44 (0) 20 8123 4567</a></li>
+						<li>Email: <a href="mailto:info@lemuriajewels.com">info@lemuriajewels.com</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-3">
+					<h4>Social Media</h4>
+					<ul id="social" class="list-inline">
+						<li id="facebook">
+							<a href="https://www.facebook.com/lemuriajewels/" target="_blank"></a>
+						</li>
+						<li id="twitter">
+							<a href="https://twitter.com/lemuriajewels/" target="_blank"></a>
+						</li>
+						<li id="instagram">
+							<a href="https://www.instagram.com/lemuriajewels/" target="_blank"></a>
+						</li>
+						<li id="linkedin">
+							<a href="https://www.linkedin.com/in/tatiana-ovchinnikova-1781b94b/" target="_blank"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<p class="small">&copy; 2017 Lemuria Jewels. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

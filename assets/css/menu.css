@@ -1,0 +1,51 @@
+section#menu {
+  padding: 100px 0 50px 0;
+  text-align: center;
+  height: 815px;
+  position: absolute;
+  background: white;
+  width: 100%;
+  z-index: 0;
+}
+section#menu ul.list-unstyled li a {
+    color: #2a2a2a;
+    display:block;
+    padding:10px 0;
+    font-family: 'Old Standard TT', serif;
+    font-size:40px;
+    line-height:1.5;
+    text-decoration: none;
+}
+section#menu ul.list-unstyled li a:hover {
+    color: #898686;
+}
+section#menu ul.list-unstyled li ul {
+    margin-top:20px;
+}
+section#menu ul.list-unstyled li ul li a {
+    display:block;
+    height:50px;
+    width:50px;
+}
+section#menu ul.list-unstyled li ul li#facebook a {
+    background:url(../images/facebook-icon.svg);
+    background-size:contain;
+}
+section#menu ul.list-unstyled li ul li#twitter a {
+    background:url(../images/twitter-icon.svg);
+    background-size:contain;
+}
+section#menu ul.list-unstyled li ul li#linkedin a {
+    background:url(../images/linkedin-icon.svg);
+    background-size:contain;
+}
+section#menu ul.list-unstyled li ul li#instagram a {
+    background:url(../images/instagram-icon.svg);
+    background-size:contain;
+}
+section#menu .logo {
+    margin: 0 auto 100px;
+}
+section#menu .btn-hamburger span {
+    background: #2a2a2a;
+}
